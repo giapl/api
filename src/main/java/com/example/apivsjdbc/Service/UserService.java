@@ -13,5 +13,5 @@ public interface UserService {
   public User deletUser(int id); // delete xoa du lieu dua vao id
   public User updateUser(User user1); // put update du lieu treen du lieu da co
 
-  public User save(User newUser1);
+  public void save(User newUser1);
 }

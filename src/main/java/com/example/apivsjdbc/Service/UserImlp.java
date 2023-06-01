@@ -46,9 +46,8 @@ public class UserImlp implements UserService{
   }
 
   @Override
-  public User save(User newUser1) {
+  public void save(User newUser1) {
     String sql = "INSERT INTO user (id,name, email,sex,address) VALUES (?, ?,?,?)";
     UserImlp.update(sql,newUser1.getId(), newUser1.getName(), newUser1.getEmail(),newUser1.getSex(),newUser1.getAddress());
-    return newUser1;
   }
 }
