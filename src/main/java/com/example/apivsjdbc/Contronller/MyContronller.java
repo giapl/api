@@ -32,7 +32,7 @@ public class MyContronller {
   }
    */
   @PostMapping("")
-  public ResponseEntity<String> createUser(@RequestBody User newUser1) {
+  public ResponseEntity<String> save (@RequestBody User newUser1) {
     try {
       // Lưu trữ dữ liệu vào cơ sở dữ liệu MySQL bằng JDBC
       userService.save(newUser1);
